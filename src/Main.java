@@ -7,10 +7,7 @@ public class Main {
         miCliente.setTelefono("867-5309");
         miCliente.setCredito(250000);
         //Getters Cliente
-        System.out.println("La edad del cliente es " +miCliente.getEdad()+ " años");
-        System.out.println("El nombre del cliente es " +miCliente.getNombre());
-        System.out.println("El teléfono del cliente es " +miCliente.getTelefono());
-        System.out.println("El crédito disponible del cliente es: " +miCliente.getCredito());
+        System.out.println("Mi nombre es " +miCliente.getNombre()+ ", tengo " +miCliente.getEdad()+ " años, mi teléfono es " +miCliente.getTelefono()+ " y mi crédito disponible es " +miCliente.getCredito()+ " peronios.");
 
         Trabajador miTrabajador = new Trabajador();
         //Setters Trabajador
@@ -19,10 +16,8 @@ public class Main {
         miTrabajador.setTelefono("1122334455");
         miTrabajador.setSalario(5000);
         //Getters Trabajador
-        System.out.println("La edad del trabajador es " +miTrabajador.getEdad() + " años");
-        System.out.println("El nombre del trabajador es " +miTrabajador.getNombre());
-        System.out.println("El teléfono del trabajador es " +miTrabajador.getTelefono());
-        System.out.println("El salario del trabajador es " +miTrabajador.getSalario());
+        System.out.println("Mi nombre es " +miTrabajador.getNombre()+ ", tengo " +miTrabajador.getEdad()+ " años, mi teléfono es " +miTrabajador.getTelefono()+ " y mi salario es de " +miTrabajador.getSalario()+ " peronios.");
+
     }
 }
 class Persona{
@@ -53,24 +48,24 @@ class Persona{
     }
 }
 class Cliente extends Persona{
-    int credito;
+    double credito;
 
-    public void setCredito(int credito) {
+    public void setCredito(double credito) {
         this.credito = credito;
     }
 
-    public int getCredito() {
+    public double getCredito() {
         return this.credito;
     }
 }
 class Trabajador extends Persona{
-    int salario;
+    double salario;
 
-    public void setSalario(int salario) {
+    public void setSalario(double salario) {
         this.salario = salario;
     }
 
-    public int getSalario() {
+    public double getSalario() {
         return this.salario;
     }
 }
